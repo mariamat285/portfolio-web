@@ -202,7 +202,43 @@ section h1 {
         gap: 40px;
         z-index: 999;
     }
+    @media (max-width: 480px) {
 
+    section h1 {
+        font-size: 35px;
+        letter-spacing: 1px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+
+    .photo {
+        width: 100%;
+        opacity: 0.3;
+    }
+
+    .icones-flottantes {
+        width: 100%;
+        opacity: 0.2;
+    }
+
+    .hero-texte {
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    header {
+        padding: 15px 20px;
+    }
+
+    .socials {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+    }
+
+}
     nav.ouvert ul {
         display: flex;
     }
