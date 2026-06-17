@@ -3,111 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/contact.css">
+    <title>Contact — Mariama Thiam</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-contact">
 
-    <a href="index.html" class="fermer">✕</a>
+    <header>
+        <button class="btn_menu" id="btn_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-    <p class="sous-titre">N'hésitez pas à me contacter à tout moment!!!</p>
-    <h1>Contactez-moi</h1>
-    <div class="separateur"></div>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-    <div class="contact-contenu">
+        
+    </header>
 
-        <!-- formulaire -->
-        <div class="formulaire">
-            <h2>Envoyez-moi un message</h2>
+    <section class="section-contact">
+        <p class="sous-titre">N'hésitez pas à me contacter à tout moment</p>
+        <h1>Contactez-moi</h1>
+        <div class="separateur"></div>
 
-            <div class="champs-ligne">
-                <div class="champ">
-                    <label for="nom">Nom</label>
-                    <input type="text" id="nom" placeholder="Votre nom" required>
+        <div class="contact-contenu">
+
+            <div class="formulaire">
+                <h2>Envoyez-moi un message</h2>
+
+                <form id="formulaire_contact">
+                    <div class="champs-ligne">
+                        <div class="champ">
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" placeholder="Votre nom">
+                        </div>
+                        <div class="champ">
+                            <label for="prenom">Prénom</label>
+                            <input type="text" id="prenom" placeholder="Votre prénom">
+                        </div>
+                    </div>
+
+                    <div class="champ">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Votre email">
+                    </div>
+
+                    <div class="champ">
+                        <label for="objet">Sujet</label>
+                        <input type="text" id="objet" placeholder="Sujet de votre message">
+                    </div>
+
+                    <div class="champ">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Votre message..." rows="6"></textarea>
+                    </div>
+
+                    <button type="button" onclick="validerFormulaire()">Envoyer le message</button>
+
+                    <div id="message_statut" class="message-statut"></div>
+                </form>
+            </div>
+
+            <div class="infos">
+                <h2>Mes informations</h2>
+                <p class="description">Toujours disponible pour des projets et opportunités !</p>
+
+                <div class="info-item">
+                    <span class="info-emoji">👤</span>
+                    <div>
+                        <strong>Nom</strong>
+                        <span>Mariama Thiam</span>
+                    </div>
                 </div>
-                <div class="champ">
-                    <label for="prenom">Prénom</label>
-                    <input type="text" id="prenom" placeholder="Votre prénom" required>
+
+                <div class="info-item">
+                    <span class="info-emoji">📍</span>
+                    <div>
+                        <strong>Localisation</strong>
+                        <span>Dakar, Sénégal</span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-emoji">✉️</span>
+                    <div>
+                        <strong>Email</strong>
+                        <span>mariamat285@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-emoji">🐙</span>
+                    <div>
+                        <strong>GitHub</strong>
+                        <span>mariamat285</span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-emoji">💼</span>
+                    <div>
+                        <strong>LinkedIn</strong>
+                        <span>Mariama Thiam</span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-emoji">📷</span>
+                    <div>
+                        <strong>Instagram</strong>
+                        <span>mariamat285</span>
+                    </div>
                 </div>
             </div>
-
-            <div class="champ">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Votre email" required>
-            </div>
-
-            <div class="champ">
-                <label for="objet">Objet</label>
-                <input type="text" id="objet" placeholder="Objet de votre message" required>
-            </div>
-
-            <div class="champ">
-                <label for="message">Message</label>
-                <textarea id="message" placeholder="Votre message..." rows="6" required></textarea>
-            </div>
-
-            <button type="submit">Envoyer le message</button>
 
         </div>
+    </section>
 
-        <!-- infos -->
-        <div class="infos">
-            <h2>Mes informations</h2>
-            <p class="description">Toujours disponible pour des projets et opportunités !</p>
-
-            <div class="info-item">
-                <i class="fa-solid fa-user"></i>
-                <div>
-                    <strong>Nom</strong>
-                    <span>Mariama Thiam</span>
-                </div>
-            </div>
-
-            <div class="info-item">
-                <i class="fa-solid fa-location-dot"></i>
-                <div>
-                    <strong>Localisation</strong>
-                    <span>Dakar, Sénégal</span>
-                </div>
-            </div>
-
-            <div class="info-item">
-                <i class="fa-solid fa-envelope"></i>
-                <div>
-                    <strong>Email</strong>
-                    <span>mariamat285@gmail.com</span>
-                </div>
-            </div>
-
-            <div class="info-item">
-                <i class="fa-brands fa-github"></i>
-                <div>
-                    <strong>GitHub</strong>
-                    <span>mariamat285</span>
-                </div>
-            </div>
-
-            <div class="info-item">
-                <i class="fa-brands fa-linkedin"></i>
-                <div>
-                    <strong>LinkedIn</strong>
-                    <span>Mariama Thiam</span>
-                </div>
-            </div>
-
-            <div class="info-item">
-                <i class="fa-brands fa-instagram"></i>
-                <div>
-                    <strong>Instagram</strong>
-                    <span>mariamat285</span>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
+    <script src="js/script.js"></script>
 </body>
 </html>

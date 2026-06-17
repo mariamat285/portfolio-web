@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets — Mariama Thiam</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-projets">
+
+    <header>
+        <button class="btn_menu" id="btn_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/mariama-thiam-1573303a6" target="_blank">LinkedIn</a>
+            <a href="https://github.com/mariamat285" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/mariamat285" target="_blank">Instagram</a>
+        </div>
+    </header>
+
+    <section class="section-projets">
+        <p class="sous-titre">Ce que j'ai construit</p>
+        <h1>Mes projets</h1>
+        <div class="separateur"></div>
+
+        <div class="grille-projets">
+
+            <!-- PROJET 1 : Nettoyage de données -->
+            <div class="carte-projet">
+                <div class="illustration-projet illustration-1">
+                    <svg viewBox="0 0 200 120">
+                        <rect x="20" y="20" width="160" height="80" rx="8" fill="#3b0764"/>
+                        <rect x="35" y="35" width="60" height="8" rx="4" fill="#a78bfa"/>
+                        <rect x="35" y="50" width="90" height="8" rx="4" fill="#7c3aed"/>
+                        <rect x="35" y="65" width="40" height="8" rx="4" fill="#a78bfa"/>
+                        <circle cx="160" cy="40" r="14" fill="#22c55e" opacity="0.7"/>
+                    </svg>
+                </div>
+                <div class="contenu-projet">
+                    <h3>Pipeline de nettoyage de données patients</h3>
+                    <p class="description-courte">
+                        Projet Python en architecture modulaire pour nettoyer un jeu de données médicales,
+                        réalisé en binôme.
+                    </p>
+                    <div class="technos">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Git</span>
+                    </div>
+                    <button class="btn-voir-plus" onclick="toggleProjet('details-1')">Voir plus</button>
+                    <div id="details-1" class="details-projet">
+                        <p>
+                            Le projet comprend une suite de 59 tests automatisés, une interface console
+                            colorée pour suivre le traitement, l'export des résultats en JSON, et une
+                            fonctionnalité de recherche de patients. Le code est organisé en plusieurs
+                            fichiers pour séparer les responsabilités (lecture, nettoyage, export).
+                        </p>
+                        <a href="https://github.com/mariamat285/Projet_python" target="_blank" class="lien-projet">Voir sur GitHub →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJET 2 : Portfolio -->
+            <div class="carte-projet">
+                <div class="illustration-projet illustration-2">
+                    <svg viewBox="0 0 200 120">
+                        <rect x="20" y="15" width="160" height="90" rx="10" fill="#2d0a3e" stroke="#a78bfa" stroke-width="2"/>
+                        <rect x="20" y="15" width="160" height="18" rx="10" fill="#4c1d95"/>
+                        <circle cx="32" cy="24" r="3" fill="#f472b6"/>
+                        <circle cx="42" cy="24" r="3" fill="#facc15"/>
+                        <circle cx="52" cy="24" r="3" fill="#86efac"/>
+                        <rect x="35" y="50" width="50" height="40" rx="6" fill="#6d28d9" opacity="0.7"/>
+                        <rect x="95" y="50" width="70" height="8" rx="4" fill="#a78bfa"/>
+                        <rect x="95" y="65" width="55" height="8" rx="4" fill="#7c3aed"/>
+                    </svg>
+                </div>
+                <div class="contenu-projet">
+                    <h3>Portfolio personnel dynamique</h3>
+                    <p class="description-courte">
+                        Ce site lui-même : un portfolio multi-pages, responsive, codé en HTML/CSS/JS natif.
+                    </p>
+                    <div class="technos">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <button class="btn-voir-plus" onclick="toggleProjet('details-2')">Voir plus</button>
+                    <div id="details-2" class="details-projet">
+                        <p>
+                            Cinq pages reliées par une navigation commune, un message de bienvenue au
+                            chargement, un formulaire de contact validé en JavaScript, et un design
+                            entièrement personnalisé sans aucune bibliothèque externe.
+                        </p>
+                        <a href="https://github.com/mariamat285" target="_blank" class="lien-projet">Voir sur GitHub →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJET 3 : Machine Learning -->
+            <div class="carte-projet">
+                <div class="illustration-projet illustration-3">
+                    <svg viewBox="0 0 200 120">
+                        <rect x="30" y="20" width="60" height="50" rx="6" fill="#3b0764" stroke="#f472b6" stroke-width="2"/>
+                        <rect x="110" y="40" width="60" height="50" rx="6" fill="#3b0764" stroke="#22c55e" stroke-width="2"/>
+                        <line x1="90" y1="45" x2="110" y2="65" stroke="#a78bfa" stroke-width="2"/>
+                        <circle cx="60" cy="45" r="6" fill="#f472b6" opacity="0.6"/>
+                        <circle cx="140" cy="65" r="6" fill="#22c55e" opacity="0.6"/>
+                    </svg>
+                </div>
+                <div class="contenu-projet">
+                    <h3>Détection d'objets sur images agricoles</h3>
+                    <p class="description-courte">
+                        Atelier Open Data Camp (Dakar) : détection de fruits avec DiffusionDet sur le
+                        dataset Cashew Uganda.
+                    </p>
+                    <div class="technos">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Detectron2</span>
+                        <span class="tech-tag">Google Colab</span>
+                    </div>
+                    <button class="btn-voir-plus" onclick="toggleProjet('details-3')">Voir plus</button>
+                    <div id="details-3" class="details-projet">
+                        <p>
+                            Travail réalisé lors d'un atelier collaboratif autour de l'intelligence
+                            artificielle appliquée à l'agriculture. J'ai contribué à la documentation
+                            pédagogique du projet ainsi qu'au débogage du pipeline d'inférence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJET 4 : Catalogue films en C -->
+            <div class="carte-projet">
+                <div class="illustration-projet illustration-4">
+                    <svg viewBox="0 0 200 120">
+                        <rect x="25" y="25" width="35" height="50" rx="4" fill="#4c1d95"/>
+                        <rect x="65" y="25" width="35" height="50" rx="4" fill="#6d28d9"/>
+                        <rect x="105" y="25" width="35" height="50" rx="4" fill="#7c3aed"/>
+                        <rect x="145" y="25" width="35" height="50" rx="4" fill="#8b5cf6"/>
+                        <rect x="25" y="85" width="155" height="10" rx="5" fill="#3b0764"/>
+                    </svg>
+                </div>
+                <div class="contenu-projet">
+                    <h3>Catalogue de films personnalisé</h3>
+                    <p class="description-courte">
+                        Projet en langage C, actuellement en cours, pour gérer une collection de films.
+                    </p>
+                    <div class="technos">
+                        <span class="tech-tag">C</span>
+                        <span class="tech-tag">Structures</span>
+                        <span class="tech-tag">Fichiers</span>
+                    </div>
+                    <button class="btn-voir-plus" onclick="toggleProjet('details-4')">Voir plus</button>
+                    <div id="details-4" class="details-projet">
+                        <p>
+                            Application en cours de développement permettant d'ajouter, de rechercher et
+                            d'afficher des films dans un catalogue personnel, en utilisant des structures
+                            et la manipulation de fichiers en C.
+                        </p>
+                        <span class="statut-encours">Projet en cours</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

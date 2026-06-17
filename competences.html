@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences — Mariama Thiam</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-competences">
+
+    <header>
+        <button class="btn_menu" id="btn_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/mariama-thiam-1573303a6" target="_blank">LinkedIn</a>
+            <a href="https://github.com/mariamat285" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/mariamat285" target="_blank">Instagram</a>
+        </div>
+    </header>
+
+    <section class="section-competences">
+        <p class="sous-titre">Ce que je sais faire</p>
+        <h1>Mes compétences</h1>
+        <div class="separateur"></div>
+
+        <div class="liste-competences">
+
+            <div class="carte-competence">
+                <div class="competence-entete">
+                    <h3>Python</h3>
+                    <span class="niveau niveau-intermediaire">Intermédiaire</span>
+                </div>
+                <button class="btn-details" onclick="toggleDetails('detail-python')">Voir les détails</button>
+                <p id="detail-python" class="detail-competence">
+                    J'utilise Python pour le traitement de données, avec des bibliothèques comme Pandas,
+                    NumPy et Matplotlib, ainsi que pour des projets de nettoyage de données et d'analyse statistique.
+                </p>
+            </div>
+
+            <div class="carte-competence">
+                <div class="competence-entete">
+                    <h3>SQL</h3>
+                    <span class="niveau niveau-intermediaire">Intermédiaire</span>
+                </div>
+                <button class="btn-details" onclick="toggleDetails('detail-sql')">Voir les détails</button>
+                <p id="detail-sql" class="detail-competence">
+                    Je conçois des bases de données avec la méthode Merise et j'écris des requêtes SQL
+                    sur PostgreSQL, notamment pour des systèmes de gestion comme un système de vols.
+                </p>
+            </div>
+
+            <div class="carte-competence">
+                <div class="competence-entete">
+                    <h3>HTML / CSS</h3>
+                    <span class="niveau niveau-intermediaire">Intermédiaire</span>
+                </div>
+                <button class="btn-details" onclick="toggleDetails('detail-htmlcss')">Voir les détails</button>
+                <p id="detail-htmlcss" class="detail-competence">
+                    Je construis des sites web responsives et multi-pages, comme ce portfolio,
+                    en structurant le contenu avec HTML5 et en le stylisant avec CSS3.
+                </p>
+            </div>
+
+            <div class="carte-competence">
+                <div class="competence-entete">
+                    <h3>JavaScript</h3>
+                    <span class="niveau niveau-debutant">Débutant</span>
+                </div>
+                <button class="btn-details" onclick="toggleDetails('detail-js')">Voir les détails</button>
+                <p id="detail-js" class="detail-competence">
+                    J'apprends à rendre mes pages web interactives : validation de formulaires,
+                    affichage/masquage d'éléments, et manipulation du DOM.
+                </p>
+            </div>
+
+            <div class="carte-competence">
+                <div class="competence-entete">
+                    <h3>Machine Learning</h3>
+                    <span class="niveau niveau-debutant">Débutant</span>
+                </div>
+                <button class="btn-details" onclick="toggleDetails('detail-ml')">Voir les détails</button>
+                <p id="detail-ml" class="detail-competence">
+                    Je découvre les bases du machine learning : régression linéaire, descente de gradient,
+                    et j'ai participé à un projet de détection d'objets avec Detectron2.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mariama Thiam — Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- Message de bienvenue (Fonction JS obligatoire #1) -->
+    <!-- Message de bienvenue  -->
     <div id="message_bienvenue" class="overlay-bienvenue">
         <div class="bienvenue-boite">
-            <p>👋 Bienvenue sur mon portfolio !</p>
+            <p>👋Bienvenue sur mon portfolio !</p>
             <button onclick="fermerBienvenue()">Entrer</button>
         </div>
     </div>
 
     <header>
+        <!-- MENU AVEC 3 Barre en cas de responsivite-->
         <button class="btn_menu" id="btn_menu">
-            <i class="fa-solid fa-bars"></i>
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
 
+        
         <nav id="menu">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -33,40 +35,38 @@
             </ul>
         </nav>
 
+        
         <div class="socials">
-            <a href="https://www.linkedin.com/in/mariama-thiam-1573303a6" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/mariamat285" target="_blank">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.instagram.com/mariamat285" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
+            <a href="https://www.linkedin.com/in/mariama-thiam-1573303a6" target="_blank">LinkedIn</a>
+            <a href="https://github.com/mariamat285" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/mariamat285" target="_blank">Instagram</a>
         </div>
     </header>
 
     <section>
-        <div class="icones-flottantes">
-            <i class="fa-brands fa-python"></i>
-            <i class="fa-brands fa-js"></i>
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-css3-alt"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-solid fa-brain"></i>
-            <i class="fa-solid fa-robot"></i>
-            <i class="fa-solid fa-database"></i>
-            <i class="fa-solid fa-code"></i>
-            <i class="fa-brands fa-react"></i>
-            <i class="fa-brands fa-node-js"></i>
-            <i class="fa-solid fa-microchip"></i>
-            <i class="fa-solid fa-network-wired"></i>
-            <i class="fa-solid fa-laptop-code"></i>
-            <i class="fa-solid fa-chart-line"></i>
-            <i class="fa-solid fa-infinity"></i>
-            <i class="fa-solid fa-satellite"></i>
-            <i class="fa-solid fa-server"></i>
-        </div>
+        <div class="blobs-fond">
+    <svg viewBox="0 0 500 700" preserveAspectRatio="xMidYMid slice">
+        <defs>
+            <radialGradient id="blobA" cx="40%" cy="35%" r="65%">
+                <stop offset="0%" stop-color="#8b5cf6"/>
+                <stop offset="100%" stop-color="#3b0764"/>
+            </radialGradient>
+            <radialGradient id="blobB" cx="40%" cy="35%" r="65%">
+                <stop offset="0%" stop-color="#a78bfa"/>
+                <stop offset="100%" stop-color="#4c1d95"/>
+            </radialGradient>
+            <radialGradient id="blobC" cx="40%" cy="35%" r="65%">
+                <stop offset="0%" stop-color="#6d28d9"/>
+                <stop offset="100%" stop-color="#2d0a3e"/>
+            </radialGradient>
+        </defs>
+
+        <ellipse class="blob blob-1" cx="120" cy="160" rx="130" ry="100" fill="url(#blobA)"/>
+        <ellipse class="blob blob-2" cx="320" cy="120" rx="90" ry="70" fill="url(#blobB)"/>
+        <ellipse class="blob blob-3" cx="100" cy="480" rx="140" ry="110" fill="url(#blobC)"/>
+        <ellipse class="blob blob-4" cx="340" cy="560" rx="100" ry="80" fill="url(#blobA)"/>
+    </svg>
+</div>
 
         <div class="photo">
             <img src="images/fondEcran.png" alt="Photo de profil">
