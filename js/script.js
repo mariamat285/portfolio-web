@@ -53,6 +53,11 @@ window.onload = function () {
 });
 
 }
+// Fonction pour fermer le message de bienvenue
+function fermerBienvenue() {
+    let overlay = document.getElementById("message_bienvenue");
+    overlay.style.display = "none";
+}
 
 
 

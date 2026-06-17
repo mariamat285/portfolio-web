@@ -1,89 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Ma présentation
-    </title>
-     <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">   
-    <link rel="stylesheet" href="CSS/style.css">
+    <title>Mariama Thiam — Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!-- Message de bienvenue (Fonction JS obligatoire #1) -->
+    <div id="message_bienvenue" class="overlay-bienvenue">
+        <div class="bienvenue-boite">
+            <p>👋 Bienvenue sur mon portfolio !</p>
+            <button onclick="fermerBienvenue()">Entrer</button>
+        </div>
+    </div>
+
     <header>
         <button class="btn_menu" id="btn_menu">
             <i class="fa-solid fa-bars"></i>
         </button>
+
         <nav id="menu">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="Apropos.html" >À propos</a></li>
-                <li><a href="Projets.html">Projets</a></li>
-                <li><a href="Formation.html">Formation</a></li>
-                <li><a href="Compétences.html">Compétences</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-       <div class="socials">
 
-    <a href="https://www.linkedin.com/in/mariama-thiam-1573303a6"
-       target="_blank">
-       <i class="fa-brands fa-linkedin"></i>
-    </a>
-
-    <a href="https://github.com/mariamat285"
-       target="_blank">
-       <i class="fa-brands fa-github"></i>
-    </a>
-
-    <a href="https://www.instagram.com/mariamat285?igsh=MXQwc3hxeThnc3prcw=="
-       target="_blank">
-       <i class="fa-brands fa-instagram"></i>
-    </a>
-
-</div>
-        
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/mariama-thiam-1573303a6" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/mariamat285" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/mariamat285" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
     </header>
-    
-<section>
-    <div class="icones-flottantes">
-        <i class="fa-brands fa-python"></i>
-        <i class="fa-brands fa-js"></i>
-        <i class="fa-brands fa-html5"></i>
-        <i class="fa-brands fa-css3-alt"></i>
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-solid fa-brain"></i>
-        <i class="fa-solid fa-robot"></i>
-        <i class="fa-solid fa-database"></i>
-        <i class="fa-solid fa-code"></i>
-        <i class="fa-brands fa-react"></i>
-        <i class="fa-brands fa-node-js"></i>
-        <i class="fa-solid fa-microchip"></i>
-        <i class="fa-solid fa-network-wired"></i>
-        <i class="fa-solid fa-laptop-code"></i>
-        <i class="fa-solid fa-chart-line"></i>
-        <i class="fa-solid fa-infinity"></i>
-        <i class="fa-solid fa-satellite"></i>
-        <i class="fa-solid fa-server"></i>
-    </div>
-    <div class="photo"> 
-        <img src="CSS/fondEcran.png" alt="ma photo">
-    </div>
+
+    <section>
+        <div class="icones-flottantes">
+            <i class="fa-brands fa-python"></i>
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-solid fa-brain"></i>
+            <i class="fa-solid fa-robot"></i>
+            <i class="fa-solid fa-database"></i>
+            <i class="fa-solid fa-code"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-node-js"></i>
+            <i class="fa-solid fa-microchip"></i>
+            <i class="fa-solid fa-network-wired"></i>
+            <i class="fa-solid fa-laptop-code"></i>
+            <i class="fa-solid fa-chart-line"></i>
+            <i class="fa-solid fa-infinity"></i>
+            <i class="fa-solid fa-satellite"></i>
+            <i class="fa-solid fa-server"></i>
+        </div>
+
+        <div class="photo">
+            <img src="images/fondEcran.png" alt="Photo de profil">
+        </div>
 
         <div class="hero-texte">
-        <h1>MARIAMA THIAM</h1>
-        <p>
-            Je suis: <span id="type_de_texte"></span><span class="cursor">|</span>
-        </p>
-    </div>
-</section>
-        
+            <h1>MARIAMA THIAM</h1>
+            <p>Je suis : <span id="type_de_texte"></span><span class="cursor">|</span></p>
+        </div>
+    </section>
 
-    <script src="JavaScript/javascript.js"></script>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
